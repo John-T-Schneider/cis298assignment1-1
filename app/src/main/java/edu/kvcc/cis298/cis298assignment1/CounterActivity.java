@@ -23,6 +23,25 @@ public class CounterActivity extends AppCompatActivity {
 
         mCounter = (TextView) findViewById(R.id.counter);
 
+
+
+        mMinusButton = (Button) findViewById(R.id.minus_button);
+        mMinusButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String displayCount = mCounter.getText().toString();
+                int count = Integer.parseInt(displayCount);
+
+                count--;
+
+                String newCount = Integer.toString(count);
+                mCounter.setText(newCount);
+
+            }
+
+        });
+
         mPlusButton = (Button) findViewById(R.id.plus_button);
         mPlusButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,23 +59,6 @@ public class CounterActivity extends AppCompatActivity {
                     Toast.makeText(CounterActivity.this, R.string.count_hit, Toast.LENGTH_SHORT).show();
                 }
             }
-        });
-
-        mMinusButton = (Button) findViewById(R.id.minus_button);
-        mMinusButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String displayCount = mCounter.getText().toString();
-                int count = Integer.parseInt(displayCount);
-
-                count--;
-
-                String newCount = Integer.toString(count);
-                mCounter.setText(newCount);
-
-            }
-
         });
     }
 
