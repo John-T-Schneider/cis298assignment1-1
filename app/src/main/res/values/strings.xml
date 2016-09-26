@@ -3,4 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="plus_button">Plus button</string>
+    <string name="minus_button">Minus Button</string>
+    <string name="count_hit">You have hit 20.</string>
 </resources>
