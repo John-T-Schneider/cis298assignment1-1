@@ -39,3 +39,4 @@ This application should be very similar to the first application in the book.
 ## Outside Resources Used
 
 ## Known Problems, Issues, And/Or Errors in the Program
+I am pretty sure my code would work, but it wont find the string.xml file and i can't figure out why.
